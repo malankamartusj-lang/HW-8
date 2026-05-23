@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Залиште свої дані, ми з вами зв'яжемося</h2>
+<form style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: start; max-width: 600px;">
+  
+  <!-- Ліва колонка -->
+  <div style="display: flex; flex-direction: column; gap: 12px;">
+    <label>Ім'я
+      <div><input type="text"></div>
+    </label>
+
+    <label>E-mail
+      <div><input type="text"></div>
+    </label>
+
+    <label>Контактний телефон
+      <div><input type="text"></div>
+    </label>
+
+    <label>Посилання на Facebook або CV
+      <div><input type="text"></div>
+    </label>
+
+    <label>Прикріпіть файл
+      <div><input type="file"></div>
+    </label>
+
+    <div>
+      <button type="submit">Надіслати</button>
+    </div>
+  </div>
+
+  <!-- Права колонка -->
+ <div style="display: flex; flex-direction: column; gap: 6px;">
+  <label for="cover_letter">Супровідний лист</label>
+  <textarea
+    id="cover_letter"
+    name="cover_letter"
+    placeholder="Розкажіть про себе..."
+    style="min-height: 280px; resize: vertical;"
+  ></textarea>
+  <button type="submit">Надіслати</button>
+   <label for="">Чи погоджуєтесь ви на обробку ваших данних?
+            <input type="checkbox">
+        </label>
+</div>
+
+</form>
+</body>
+</html>
